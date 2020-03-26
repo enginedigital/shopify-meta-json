@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      body {
+        padding: 1rem;
+        min-width: 130px;
+      }
+      /* styles for Shopify buttons */
+      button {
+        -webkit-font-smoothing: antialiased;
+        text-size-adjust: 100%;
+        text-rendering: optimizeLegibility;
+        text-transform: none;
+        letter-spacing: normal;
+        font-weight: 400;
+        font-size: 13px;
+        font-family: -apple-system,BlinkMacSystemFont,San Francisco,Roboto,Segoe UI,Helvetica Neue,sans-serif;
+        list-style: none;
+        box-sizing: border-box;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        min-width: 3.6rem;
+        margin: 0 0 0.2rem 0;
+        background: linear-gradient(180deg,#fff,#f9fafb);
+        border: .1rem solid #c4cdd5;
+        box-shadow: 0 1px 0 0 rgba(22,29,37,.05);
+        line-height: 1;
+        color: #212b36;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        text-decoration: none;
+        transition-property: background,border,box-shadow;
+        transition-duration: .2s;
+        transition-timing-function: cubic-bezier(.64,0,.35,1);
+        -webkit-tap-highlight-color: transparent;
+        min-height: 2.4rem;
+        padding: .4rem 1.2rem;
+        display: flex;
+        width: 100%;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+      button:hover {
+        background: linear-gradient(180deg,#f9fafb,#f4f6f8);
+        border-color: #c4cdd5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message" style="display: block"><strong>Not a product page</strong></div>
+    <div id="valid" style="display: none">
+      <button type="button" id="json-button">JSON</button>
+      <button type="button" id="metafields-button">Metafields</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
