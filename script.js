@@ -20,7 +20,7 @@ const handler = (url, type) => {
     }
 };
 
-chrome.tabs.query({ 'active': true, 'lastFocusedWindow': true }, (tabs) => {
+chrome.tabs.query({ active: true, lastFocusedWindow: true }, (tabs) => {
     const currentUrl = tabs[0].url || null;
 
     if (!currentUrl) {
